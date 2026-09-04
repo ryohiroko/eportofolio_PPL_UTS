@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Portfolio PPL Siklus 1 | Kadek Angga Arijaya Kusuma, S.Pd.</title>
+  <meta name="description"
+    content="E-Portfolio Praktik Pengalaman Lapangan (PPL) Siklus 1 - Kadek Angga Arijaya Kusuma, S.Pd. (PPG Prajabatan Informatika UNDIKSHA - SMPN 1 Singaraja). Modul Ajar: Navigator Jejaring Data (Tree & Graph) Terintegrasi PSE.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon-education.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#profil" class="nav-brand">
+        <div class="brand-icon">🎓</div>
+        <div class="brand-title-wrap">
+          <span class="brand-name">E-Portfolio PPL</span>
+          <span class="brand-tag">Siklus 1 • Mandiri</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#profil" class="nav-link active">Identitas</a></li>
+          <li><a href="#modul-ajar" class="nav-link">Rancangan Pembelajaran</a></li>
+          <li><a href="#video-praktik" class="nav-link">Video Praktik</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="btn-theme-toggle" class="btn-icon" title="Ubah Mode Gelap/Terang" aria-label="Toggle theme">
+          <span id="theme-toggle-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         SECTION 1: HERO & PROFILE CARD (IDENTITAS MAHASISWA PRAKTIKAN)
+         ========================================================================= -->
+    <section class="hero-section">
+      <div class="container">
+
+        <div id="profil" class="profile-card glass-panel">
+          <div class="profile-avatar-wrap">
+            <div class="profile-avatar">
+              <img src="assets/images/profile.svg" alt="Foto Profil Kadek Angga Arijaya Kusuma" class="profile-img">
+            </div>
+            <span class="status-indicator" title="Mahasiswa Aktif PPG"></span>
+          </div>
+
+          <div class="profile-details">
+            <div class="profile-name-row">
+              <h2 class="profile-name">Kadek Angga Arijaya Kusuma, S.Pd.</h2>
+              <span class="tag-status">Mahasiswa PPG Prajabatan</span>
+            </div>
+
+            <div class="profile-meta-grid">
+              <div class="meta-item">
+                <span class="meta-label">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  NIM
+                </span>
+                <span class="meta-val font-mono">2664826021</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="meta-label">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                  Bidang Studi
+                </span>
+                <span class="meta-val font-bold text-accent">Informatika (Fase D / Kelas IX)</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="meta-label">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                  LPTK Penyelenggara
+                </span>
+                <span class="meta-val">Universitas Pendidikan Ganesha (UNDIKSHA)</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="meta-label">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  Sekolah Tempat Praktik
+                </span>
+                <span class="meta-val">SMP Negeri 1 Singaraja</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="meta-label">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Dosen Pembimbing Lapangan
+                </span>
+                <span class="meta-val">Prof. Dr. Dra. I Dewa Ayu Made Budhyani, M.Pd.</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="meta-label">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  Guru Pamong
+                </span>
+                <span class="meta-val">Kadek Martina, S.Pd.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: PRODUK RANCANGAN & PERENCANAAN PEMBELAJARAN (MODUL AJAR SIKLUS 1)
+         ========================================================================= -->
+    <section id="modul-ajar">
+      <div class="container">
+
+        <!-- Header Section -->
+        <div class="section-header">
+          <span class="section-badge">📄 Produk 1 Portofolio PPL</span>
+          <h2 class="section-title">Rancangan & Perencanaan Pembelajaran Lengkap</h2>
+          <!-- EDIT TEKS: Deskripsi pengantar Section 2 -->
+          <p class="section-desc">
+            Bagian ini memuat produk rancangan/perencanaan pembelajaran terbaik dari pelaksanaan praktik mengajar
+            mandiri Siklus 1 di SMP Negeri 1 Singaraja. Perangkat ini dirancang secara utuh dan komprehensif mulai dari
+            modul ajar, LKPD, bahan ajar digital, hingga instrumen asesmen.
+          </p>
+        </div>
+
+        <!-- Master Card Modul Ajar -->
+        <div class="lesson-plan-card">
+
+          <!-- Card Header & Summary -->
+          <div class="lesson-plan-header">
+            <div class="lesson-plan-title-area">
+
+              <!-- Badges / Tags -->
+              <div class="lesson-tags">
+                <span class="tag-badge accent">Kurikulum Merdeka</span>
+                <span class="tag-badge">Terintegrasi PSE (CASEL)</span>
+                <span class="tag-badge">Problem-Based Learning (PBL)</span>
+                <span class="tag-badge">Informatika • Fase D (Kelas IX) • 3 × 40 Menit</span>
+              </div>
+
+              <!-- EDIT TEKS: Judul Modul Ajar Anda -->
+              <h3 class="plan-title">
+                NAVIGATOR JEJARING DATA: Eksplorasi Konsep & Pemodelan Struktur Data Tree & Graph
+              </h3>
+
+              <!-- EDIT TEKS: Slogan / Subjudul Modul Ajar -->
+              <p style="font-style: italic; font-weight: 600; color: var(--primary); margin-bottom: 10px;">
+                "Petakan Simpulnya, Telusuri Jalurnya, Hubungkan Solusinya!"
+              </p>
+
+              <!-- EDIT TEKS: Deskripsi Umum / Penjelasan Ringkas Modul Ajar -->
+              <p class="plan-desc">
+                Rancangan pembelajaran inovatif berbasis masalah (Problem-Based Learning) terintegrasi Pembelajaran
+                Sosial Emosional (PSE) pada elemen Berpikir Komputasional. Modul ini membimbing murid membedakan
+                karakteristik data hierarki (Tree) dengan data jejaring (Graph), melakukan simulasi rute navigasi cerdas
+                di lab komputer, serta menganalisis anomali sistem melalui misi penyelidikan terstruktur.
+              </p>
+            </div>
+          </div>
+
+          <!-- Highlight Tujuan & Karakteristik Pembelajaran (Dummy yang mudah diedit) -->
+          <div class="lesson-goals-box">
+            <div class="goals-header">
+              <span>🎯</span>
+              <span>Tujuan Pembelajaran Kunci (Siklus 1):</span>
+            </div>
+            <ul class="goals-list">
+              <!-- EDIT TEKS: Tujuan Pembelajaran 1 -->
+              <li class="goal-item">
+                <span class="goal-bullet">1</span>
+                <span><strong>Pemodelan Struktur Data (TP 1):</strong> Murid mampu membedakan serta merepresentasikan
+                  struktur data Tree (hierarki/bebas siklus) dan Graph (jejaring relasi) melalui studi kasus kontekstual
+                  dengan sikap gigih dan tenang (Self-Management).</span>
+              </li>
+              <!-- EDIT TEKS: Tujuan Pembelajaran 2 -->
+              <li class="goal-item">
+                <span class="goal-bullet">2</span>
+                <span><strong>Analisis & Kolaborasi (TP 2):</strong> Murid mampu menganalisis pemilihan struktur data
+                  yang tepat beserta alasan logisnya melalui diskusi kelompok terarah, saling menghargai pendapat, dan
+                  mengambil keputusan bersama (Relationship Skills & Responsible Decision-Making).</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Rincian Komponen Perangkat Pembelajaran -->
+          <div class="components-section">
+            <h4 style="margin-bottom: 16px; font-size: 1.05rem;">Komponen Dokumen Perencanaan Pembelajaran:</h4>
+            <div class="components-grid">
+
+              <!-- Komponen 1: Modul Ajar Inti (Klik membuka PDF Google Drive embed) -->
+              <div class="doc-component-card" onclick="openDocViewer('pdf')"
+                title="Klik untuk membuka dan membaca PDF Modul Ajar">
+                <div class="doc-card-top" onclick="openDocViewer('pdf')">
+                  <span class="doc-type-badge">Dokumen Utama</span>
+                  <!-- EDIT TEKS: Nama Dokumen -->
+                  <h5 class="doc-name">Modul Ajar Inti (PDF)</h5>
+                  <!-- EDIT TEKS: Deskripsi Dokumen -->
+                  <p class="doc-desc">Klik di sini untuk membaca dokumen PDF Modul Ajar secara langsung via Google Drive
+                    atau klik tombol redirect untuk membuka berkas asli.</p>
+                </div>
+                <div class="doc-card-bottom">
+                  <span>Baca PDF Modul Ajar (Embed) →</span>
+                  <span class="doc-pages-count">Buka Dokumen</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: PRODUK VIDEO PELAKSANAAN PRAKTIK MENGAJAR MANDIRI SIKLUS 1
+         ========================================================================= -->
+    <section id="video-praktik">
+      <div class="container">
+
+        <!-- Header Section -->
+        <div class="section-header">
+          <span class="section-badge">🎬 Produk 2 Portofolio PPL</span>
+          <h2 class="section-title">Video Pelaksanaan Praktik Mengajar Mandiri</h2>
+          <!-- EDIT TEKS: Deskripsi pengantar Section 3 -->
+          <p class="section-desc">
+            Bagian ini menyajikan dokumentasi rekaman video pelaksanaan praktik mengajar mandiri dari rancangan
+            modul ajar "Navigator Jejaring Data" di Laboratorium Komputer SMP Negeri 1 Singaraja.
+          </p>
+        </div>
+
+        <!-- Master Card Video Pembelajaran (Struktur sama dengan Section Modul Ajar) -->
+        <div class="lesson-plan-card">
+
+          <!-- Card Header & Penjelasan Terkait Video -->
+          <div class="lesson-plan-header">
+            <div class="lesson-plan-title-area">
+
+              <!-- Badges / Tags -->
+              <div class="lesson-tags">
+                <span class="tag-badge accent">Praktik Mengajar Mandiri</span>
+                <span class="tag-badge">Lab Komputer SMPN 1 Singaraja</span>
+                <span class="tag-badge">Problem-Based Learning (PBL)</span>
+                <span class="tag-badge">Alokasi: 3 × 40 Menit</span>
+              </div>
+
+              <!-- EDIT TEKS: Judul Video Praktik Mengajar -->
+              <h3 class="plan-title">
+                Video Pelaksanaan Praktik Mengajar: Navigator Jejaring Data (Tree & Graph)
+              </h3>
+
+              <!-- EDIT TEKS: Slogan / Subjudul Video -->
+              <p style="font-style: italic; font-weight: 600; color: var(--primary); margin-bottom: 10px;">
+                "Implementasi Problem-Based Learning Terintegrasi Pembelajaran Sosial Emosional (PSE)"
+              </p>
+
+              <!-- Deskripsi Pengantar Video Praktik Mengajar -->
+              <p class="plan-desc">
+                Pelaksanaan praktik pembelajaran mandiri pada materi Berpikir Komputasional (Struktur Data Tree dan
+                Graph) ini menunjukkan integrasi yang harmonis antara penguatan Pembelajaran Sosial Emosional (PSE) dan
+                pencapaian Pembelajaran Mendalam (Deep Learning). Pembelajaran dirancang tidak hanya berfokus pada
+                transfer pengetahuan kognitif, melainkan juga memfasilitasi pembentukan karakter, regulasi emosi, serta
+                pemahaman konsep yang bermakna dan aplikatif.
+              </p>
+            </div>
+          </div>
+
+          <!-- Narasi Reflektif Pelaksanaan Pembelajaran dalam Video (PSE & Deep Learning) -->
+          <div class="lesson-goals-box" style="line-height: 1.75;">
+            <div class="goals-header" style="margin-bottom: 14px;">
+              <span>🎬</span>
+              <span>Refleksi & Analisis Pelaksanaan Pembelajaran dalam Video:</span>
+            </div>
+
+            <!-- Bagian 1: Penerapan Pembelajaran Sosial Emosional (PSE) -->
+            <div
+              style="background: var(--bg-surface); padding: 18px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); border-left: 4px solid var(--primary); margin-bottom: 16px;">
+              <h4 style="color: var(--primary); margin-bottom: 8px; font-size: 1.05rem; font-weight: 700;">Penerapan
+                Pembelajaran Sosial Emosional (PSE)</h4>
+              <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.93rem;">
+                Kompetensi sosial emosional terintegrasi secara alamiah di setiap tahapan pembelajaran dengan mengacu
+                pada dimensi CASEL (<em>Collaborative for Academic, Social, and Emotional Learning</em>):
+              </p>
+              <ul
+                style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.91rem; color: var(--text-secondary);">
+                <li>
+                  <strong style="color: var(--text-primary);">• Kesadaran Diri (Self-Awareness) dan Kesadaran Sosial
+                    (Social Awareness):</strong> Pembukaan pembelajaran dengan salam kearifan lokal menumbuhkan rasa
+                  syukur, kesantunan, serta kepedulian terhadap lingkungan sekitar. Peserta didik dilatih mengenali
+                  kesiapan dirinya dalam menerima materi baru dari materi prasyarat sebelumnya.
+                </li>
+                <li>
+                  <strong style="color: var(--text-primary);">• Manajemen Diri (Self-Management):</strong> Penyisipan
+                  sesi <em>ice breaking</em> terarah di sela-sela perpindahan materi berfungsi efektif meregulasi emosi,
+                  mereduksi kejenuhan, serta mengembalikan fokus dan energi belajar peserta didik agar kembali siap
+                  berkonsentrasi.
+                </li>
+                <li>
+                  <strong style="color: var(--text-primary);">• Keterampilan Berelasi (Relationship Skills):</strong>
+                  Terlihat nyata saat peserta didik diajak melakukan simulasi kinestetik (<em>roleplay</em>) di depan
+                  kelas dan berkolaborasi dalam kerja kelompok. Mereka belajar berkomunikasi, saling menghargai peran,
+                  dan bekerja sama tanpa rasa canggung.
+                </li>
+                <li>
+                  <strong style="color: var(--text-primary);">• Pengambilan Keputusan yang Bertanggung Jawab
+                    (Responsible Decision-Making):</strong> Melalui kuis interaktif berbasis kelompok, peserta didik
+                  dilatih untuk berdiskusi, mempertimbangkan alasan logis bersama anggota tim, dan menyepakati jawaban
+                  yang tepat secara sportif dan bertanggung jawab.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bagian 2: Penerapan Pembelajaran Mendalam (Deep Learning) -->
+            <div
+              style="background: var(--bg-surface); padding: 18px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-teal); margin-bottom: 16px;">
+              <h4 style="color: var(--accent-teal); margin-bottom: 8px; font-size: 1.05rem; font-weight: 700;">Penerapan
+                Pembelajaran Mendalam (Deep Learning)</h4>
+              <p style="margin-bottom: 12px; color: var(--text-secondary); font-size: 0.93rem;">
+                Pembelajaran mendalam tercermin dari pergeseran pola belajar menghafal (<em>surface learning</em>)
+                menuju pemahaman esensial yang bermakna (<em>meaningful understanding</em>):
+              </p>
+              <ul
+                style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.91rem; color: var(--text-secondary);">
+                <li>
+                  <strong style="color: var(--text-primary);">• Kontekstualisasi dan Transfer Pengetahuan (Transfer of
+                    Knowledge):</strong> Alih-alih langsung mengenalkan konsep teoritis simpul dan sisi (<em>node, edge,
+                    vertex</em>), guru mengaitkan karakteristik Tree dan Graph dengan ekosistem nyata peserta didik,
+                  seperti relasi pertemanan di Instagram, navigasi rute Google Maps, struktur kepengurusan kelas, serta
+                  sistem direktori berkas komputer. Hal ini membuat konsep komputasi yang abstrak menjadi nyata dan
+                  mudah dikaitkan dengan pengalaman hidup siswa.
+                </li>
+                <li>
+                  <strong style="color: var(--text-primary);">• Representasi Multi-Sensori (Embodied Learning):</strong>
+                  Pelibatan gerak tubuh melalui pemodelan langsung di depan kelas mengubah konsep graf dan pohon menjadi
+                  representasi visual-kinestetik konkret. Pendekatan ini memperdalam retensi memori peserta didik karena
+                  mereka mengalami dan melihat langsung alur relasi hierarkis dan jaringan bebas.
+                </li>
+                <li>
+                  <strong style="color: var(--text-primary);">• Penalaran Kritis dan Artikulasi Konsep:</strong> Peserta
+                  didik diberi ruang untuk mengeksplorasi serta menjelaskan kembali perbedaan prinsipil kedua struktur
+                  data dengan bahasa mereka sendiri, sehingga terjadi konstruksi pengetahuan yang utuh dan bertahan
+                  lama.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bagian 3: Kesimpulan Sintesis -->
+            <div
+              style="background: var(--primary-light); padding: 14px 18px; border-radius: var(--radius-md); border: 1px solid var(--border-accent); font-size: 0.93rem; color: var(--text-primary);">
+              <p style="margin: 0; font-style: italic;">
+                "Secara keseluruhan, perpaduan PSE dan Pembelajaran Mendalam pada praktik ini menciptakan ruang kelas
+                yang aman secara psikologis (<em>psychological safety</em>) dan kaya secara kognitif, sehingga peserta
+                didik mampu berpikir kritis sekaligus bertumbuh secara sosial dan emosional."
+              </p>
+            </div>
+          </div>
+
+          <!-- Rincian Komponen Video Card (Klik memunculkan embed video / redirect) -->
+          <div class="components-section">
+            <h4 style="margin-bottom: 16px; font-size: 1.05rem;">Berkas Video Pelaksanaan Pembelajaran:</h4>
+            <div class="components-grid">
+
+              <!-- Card Komponen Video: Klik membuka Video Player Modal Embed & Redirect -->
+              <div class="doc-component-card" onclick="playCycleVideoModal()"
+                title="Klik untuk menonton video pelaksanaan praktik mengajar">
+                <div class="doc-card-top" onclick="playCycleVideoModal()">
+                  <span class="doc-type-badge"
+                    style="background: var(--accent-rose-light); color: var(--accent-rose);">Video Pembelajaran</span>
+                  <!-- EDIT TEKS: Nama Video -->
+                  <h5 class="doc-name">Video Pelaksanaan Praktik Mengajar Mandiri (Siklus 1)</h5>
+                  <!-- EDIT TEKS: Deskripsi Video -->
+                  <p class="doc-desc">Klik di sini untuk menonton rekaman video pelaksanaan praktik mengajar secara
+                    langsung (embed player) atau dialihkan ke YouTube / Google Drive.</p>
+                </div>
+                <div class="doc-card-bottom">
+                  <span>Tonton Video (Embed Player) →</span>
+                  <span class="doc-pages-count">Putar Video</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="margin-bottom: 8px;">
+            <div class="brand-icon">🎓</div>
+            <div class="brand-title-wrap">
+              <span class="brand-name">E-Portfolio PPL Siklus 1</span>
+              <span class="brand-tag">PPG Prajabatan • UNDIKSHA</span>
+            </div>
+          </div>
+          <p>
+            Dokumen portofolio digital Praktik Pengalaman Lapangan (PPL) Siklus 1 — Kadek Angga Arijaya Kusuma, S.Pd.
+            (NIM: 2664826021), SMP Negeri 1 Singaraja.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="#profil">Identitas Praktikan</a></li>
+            <li><a href="#modul-ajar">Rancangan Pembelajaran</a></li>
+            <li><a href="#video-praktik">Video Praktik Mengajar</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Kadek Angga Arijaya Kusuma, S.Pd. • Program Studi PPG Informatika, Universitas Pendidikan Ganesha
+          (UNDIKSHA).</span>
+        <span>Praktik Mengajar Mandiri Siklus 1 • SMP Negeri 1 Singaraja</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL 1: VIDEO PLAYER MODAL (EMBED & REDIRECT YT / GDRIVE)
+       ========================================================================= -->
+  <div id="video-player-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 1040px; width: 95%;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span>🎬</span>
+          <div>
+            <h4 class="modal-title">Pemutar Video Praktik Mengajar Siklus 1</h4>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Tonton Video Embed atau Buka Tautan
+              Eksternal</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('video-player-modal')" aria-label="Tutup">✕</button>
+      </div>
+
+      <div class="modal-body" style="padding: 16px;">
+        <div class="video-responsive-wrap">
+          <iframe id="modal-video-iframe" src="" title="Video Praktik Mengajar Siklus 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="modal-footer-actions">
+        <span style="font-size: 0.85rem; color: var(--text-muted);">
+          * Video dapat ditonton langsung di dalam website atau dibuka via YouTube / Google Drive.
+        </span>
+        <div style="display: flex; gap: 8px;">
+          <a id="btn-modal-youtube" href="https://youtu.be/z-FU3a8PKPI?si=ogQkkXcrLXXGVaS0" target="_blank"
+            rel="noopener noreferrer" class="btn btn-accent-red btn-sm">
+            📺 Buka di YouTube
+          </a>
+          <button class="btn btn-secondary btn-sm" onclick="closeModal('video-player-modal')">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: DOCUMENT VIEWER MODAL (GOOGLE DRIVE PDF EMBED & REDIRECT)
+       ========================================================================= -->
+  <div id="doc-viewer-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 1040px; width: 95%;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span>📄</span>
+          <div>
+            <h4 class="modal-title" id="viewer-doc-title">Pratinjau PDF Modul Ajar</h4>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Google Drive Document Viewer</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('doc-viewer-modal')" aria-label="Tutup">✕</button>
+      </div>
+
+      <div class="modal-body" style="padding: 16px;">
+        <div class="gdrive-pdf-container">
+          <div class="pdf-loading-notice">
+            <span>⏳</span> Memuat dokumen PDF dari Google Drive...
+          </div>
+          <iframe id="modal-gdrive-iframe" class="gdrive-pdf-iframe" src="" title="Pratinjau PDF Modul Ajar"
+            allow="autoplay"></iframe>
+        </div>
+      </div>
+
+      <div class="modal-footer-actions">
+        <span style="font-size: 0.85rem; color: var(--text-muted);">
+          * Anda dapat membaca dokumen langsung di atas atau membuka dokumen asli di Google Drive.
+        </span>
+        <div style="display: flex; gap: 8px;">
+          <a id="btn-modal-gdrive"
+            href="https://drive.google.com/file/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="btn btn-accent-drive btn-sm">
+            📂 Buka di Google Drive
+          </a>
+          <button class="btn btn-secondary btn-sm" onclick="closeModal('doc-viewer-modal')">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
